@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { PureComponent, Fragment } from 'react';
 import './App.css';
-
-class App extends Component {
+import FormComponent from './component/Form';
+class App extends PureComponent {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-         Testing app changes 
-        </p>
-      </div>
+      <Fragment>
+        <FormComponent />
+      </Fragment>
     );
   }
 }
